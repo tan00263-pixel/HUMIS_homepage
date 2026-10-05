@@ -1,5 +1,9 @@
 /* Mobile styles first*/
 
+:root {
+    --engDeptGreen: #505A2F;
+}
+
 body {
     background-color: #292827;
     font-family: Arial, Helvetica, sans-serif;
@@ -49,6 +53,15 @@ body {
                     }
                 }
 
+                &.drop-down-menu {
+                    border: 1px solid black;
+                    margin-top: 10px;
+
+                    select {
+                        width: 100%;
+                    }
+                }
+
                 &.bottom {
                     text-transform: uppercase;
                 }
@@ -58,29 +71,82 @@ body {
         div.green-box {
             min-height: 500px;
             background-color: #C8CAAF;
-            padding: 20px 30px;
+            padding: 10px;
             margin: 10px 0 80px;
             border-radius: 10px;
+
+            aside {
+                &.left-side {
+                    display:none;
+                }
+            }
+
+            main {
+                background-color: #fff;
+                padding: 10px;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
 
-    }
+        footer {
+            background-color: #676E3D;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            padding: 10px ;
+        }
 
-    footer {
-        background-color: #676E3D;
-        text-align: center;
-        color: white;
-        font-size: 10px;
-        padding: 10px 0;
-    }
+        /* Tablet and up overrides*/
+        @media screen and (width >= 600px) {
+            /* A breakpoint*/
 
-    /* Tablet and up overrides*/
-    @media screen and (width >= 600px) {
-        /* A breakpoint*/
-        border: 10px solid yellow;
+            section.middle {
+                > nav { /* nav child */
+                    text-align: right; /* override the mobile property*/
 
-        section.middle {
-            > nav {
-                text-align: right;
+                    &.drop-down-menu {
+                        display: none;
+                    }
+                }
+
+                div.green-box {
+                    padding: 20px 30px;
+
+                    aside {
+                        &.left-side {
+                            display: block;
+                            float: left;
+                            width: 33%;
+
+                            nav{
+                                a{
+                                    display: block;
+                                    text-transform: uppercase;
+                                    font-size: 10px;
+                                    color: #000;
+                                    border-bottom: 2px solid var(--engDeptGreen);
+                                    text-decoration: none;
+                                    padding: 10px 0 10px 10px;
+
+                                    &:hover {
+                                        background-color: var(--engDeptGreen);
+                                        color: #fff;
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+
+                    main{
+                        float: right;
+                        width: 60%;
+                    }
+                }
             }
         }
     }
