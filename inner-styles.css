@@ -1,0 +1,43 @@
+/* Mobile first*/
+
+body {
+    background-color: #292827;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+
+    section.container {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-between;
+        max-width: 780px;
+
+        header {
+            img {
+                width: 100%;
+            }
+
+        }
+
+        section.middle {
+            display: flex;
+            flex-direction: column;
+
+            nav.drop-down-menu{
+                display: flex;
+            }
+        }
+
+        /* Tablet and up overrides*/
+        @media screen and (width >= 600px) {
+            section.middle {
+                nav.drop-down-menu {
+                    display: flex;
+                }
+            }
+        }
+
+    }
+}
