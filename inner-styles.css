@@ -24,17 +24,50 @@ body {
         section.middle {
             display: flex;
             flex-direction: column;
+            border: 10px solid red;
+            height: 100%;
+            justify-content: space-between;
 
             nav.drop-down-menu{
-                display: flex;
+                /*display: none;*/
             }
+
+            nav.minor{
+                a {
+                    color: black;
+                    border-right: 1px solid black;
+                    padding-right: 5px;
+                    margin-right: 5px;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    img {
+                        vertical-align: middle;
+                    }
+
+                    &:last-of-type {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+
+        footer{
+            background-color: #676E3D;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            padding: 10px
         }
 
         /* Tablet and up overrides*/
         @media screen and (width >= 600px) {
             section.middle {
                 nav.drop-down-menu {
-                    display: flex;
+                    display: none;
                 }
             }
         }
