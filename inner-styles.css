@@ -1,4 +1,10 @@
 /* Mobile first*/
+:root {
+    --engDeptGreen: #505A2F;
+    --black: #000000;
+    --green-light: #B4B697;
+    --grey-light: #F2F1F0;
+}
 
 body {
     background-color: #292827;
@@ -22,53 +28,109 @@ body {
         }
 
         section.middle {
-            display: flex;
-            flex-direction: column;
-            border: 10px solid red;
             height: 100%;
-            justify-content: space-between;
 
-            nav.drop-down-menu{
-                /*display: none;*/
+            div.left-side {
+                display: none;
             }
 
-            nav.minor{
-                a {
-                    color: black;
-                    border-right: 1px solid black;
-                    padding-right: 5px;
-                    margin-right: 5px;
-                    text-decoration: none;
+            section.inner {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
 
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                nav.drop-down-menu {
+                    /*display: none;*/
+                }
 
-                    img {
-                        vertical-align: middle;
-                    }
+                nav.minor {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 10px;
 
-                    &:last-of-type {
-                        border-right: none;
+                    a {
+                        color: black;
+                        border-right: 1px solid black;
+                        padding-right: 5px;
+                        margin-right: 5px;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        img {
+                            vertical-align: middle;
+                        }
+
+                        &:last-of-type {
+                            border-right: none;
+                        }
                     }
+                }
+                main{
+                    padding: 30px;
                 }
             }
         }
 
-        footer{
-            background-color: #676E3D;
+        footer {
+            background-color: var(--engDeptGreen);
             text-align: center;
             color: white;
             font-size: 10px;
-            padding: 10px
+            padding: 10px 0;
         }
 
         /* Tablet and up overrides*/
         @media screen and (width >= 600px) {
             section.middle {
-                nav.drop-down-menu {
-                    display: none;
+                flex-direction: row;
+
+                div.left-side {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 30%;
+                    background-color: var(--grey-light);
+                    border-right: 2px solid var(--grey-light);
+
+                    nav.left-nav {
+                        margin: 20px 10px 0;
+                        border: 10px solid blue;
+
+                        a {
+                            display: block;
+                            text-transform: uppercase;
+                            font-size: 10px;
+                            color: var(--black);
+                            border-bottom: 2px solid var(--engDeptGreen);
+                            text-decoration: none;
+                            padding: 10px 0 10px 10px;
+
+                            &:hover {
+                                background-color: var(--engDeptGreen);
+                                color: #fff;
+                            }
+                        }
+                    }
+
+
                 }
+
+                section.inner {
+                    width: 70%;
+
+                    nav.drop-down-menu {
+                        display: none;
+                    }
+
+                    nav.minor {
+                        justify-content: flex-end;
+                    }
+                }
+
             }
         }
 
