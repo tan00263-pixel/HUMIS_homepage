@@ -16,7 +16,7 @@ body {
         background-color: #fff;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 70vh;
         justify-content: space-between;
         max-width: 780px;
 
@@ -29,6 +29,8 @@ body {
 
         section.middle {
             height: 100%;
+            display: flex;
+            flex-direction: column;
 
             div.left-side {
                 display: none;
@@ -80,7 +82,7 @@ body {
             text-align: center;
             color: white;
             font-size: 10px;
-            padding: 10px 0;
+            padding: 10px;
         }
 
         /* Tablet and up overrides*/
@@ -98,7 +100,6 @@ body {
 
                     nav.left-nav {
                         margin: 20px 10px 0;
-                        border: 10px solid blue;
 
                         a {
                             display: block;
@@ -115,8 +116,6 @@ body {
                             }
                         }
                     }
-
-
                 }
 
                 section.inner {
