@@ -21,21 +21,21 @@ body {
         }
 
         section.middle {
-                display: flex;
-                flex-direction: column;
+            display: flex;
+            flex-direction: column;
 
-                nav.drop-down-menu {
-                    display: flex;
-                    }
+            nav.drop-down-menu {
+                display: flex;
+            }
         }
 
         /* Tablet and up overrides*/
         @media screen and (width >= 600px) {
             section.middle {
-                    display: flex;
-                    }
+                display: flex;
             }
         }
-
     }
+
 }
+
