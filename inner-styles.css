@@ -1,11 +1,4 @@
 /* Mobile first*/
-:root {
-    --engDeptGreen: #505A2F;
-    --black: #000000;
-    --green-light: #B4B697;
-    --grey-light: #F2F1F0;
-    --red-header: #B42B36;
-}
 
 body {
     background-color: #292827;
@@ -17,170 +10,30 @@ body {
         background-color: #fff;
         display: flex;
         flex-direction: column;
-        /* min-height: 70vh;*/
         justify-content: space-between;
         max-width: 780px;
 
         header {
             img {
                 width: 100%;
-                display: block;
             }
 
         }
 
         section.middle {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-
-            div.left-side {
-                display: none;
-            }
-
-            section.inner {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                height: 100%;
 
                 nav.drop-down-menu {
                     display: flex;
-                    gap: 15px;
-                    justify-content: center;
-                    background-color: var(--grey-light);
-                    padding: 10px 10px;
-                    order: -1;
-
-                    label {
-                        display: flex;
-
-                        select {
-                            width: 100%;
-                        }
                     }
-                }
-
-                nav.minor {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 10px;
-                    align-items: center;
-
-                    a {
-                        color: black;
-                        border-right: 1px solid black;
-                        padding-right: 5px;
-                        margin-right: 5px;
-                        text-decoration: none;
-
-                        &:hover {
-                            text-decoration: underline;
-                        }
-
-                        img {
-                            vertical-align: middle;
-                        }
-
-                        &:last-of-type {
-                            border-right: none;
-                        }
-
-                        &.active{
-                            text-decoration: underline;
-                        }
-                    }
-
-                    &.top {
-                        text-transform: uppercase;
-                        margin: 5px 12px 0 0;
-                        order: -2;
-                    }
-
-                    &.bottom {
-                        text-transform: lowercase;
-                        margin: 10px 0;
-                    }
-                }
-
-                main {
-                    padding: 40px;
-                    font-size: 14px;
-
-                    h1 {
-                        font-size: 18px;
-                        text-transform: uppercase;
-                        color: var(--red-header);
-                    }
-                }
-            }
-        }
-
-        footer {
-            background-color: var(--engDeptGreen);
-            text-align: center;
-            color: white;
-            font-size: 10px;
-            padding: 10px;
         }
 
         /* Tablet and up overrides*/
         @media screen and (width >= 600px) {
             section.middle {
-                flex-direction: row;
-
-                div.left-side {
                     display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    width: 30%;
-                    background-color: var(--grey-light);
-                    border-right: 2px solid var(--grey-light);
-                    padding: 0 0 30px;
-
-                    nav.left-nav {
-                        margin: 20px 20px 0;
-
-                        a {
-                            display: block;
-                            text-transform: uppercase;
-                            font-size: 12px;
-                            color: var(--black);
-                            border-bottom: 2px solid var(--engDeptGreen);
-                            text-decoration: none;
-                            padding: 10px 0 10px 10px;
-
-                            &:hover {
-                                background-color: var(--engDeptGreen);
-                                color: #fff;
-                            }
-
-                            &.active {
-                                font-weight: bold;
-                            }
-                        }
                     }
-
-                    div.login-links {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        gap: 8px;
-                    }
-                }
-
-                section.inner {
-                    width: 70%;
-
-                    nav.drop-down-menu {
-                        display: none;
-                    }
-
-                    nav.minor {
-                        justify-content: flex-end;
-                    }
-                }
-
             }
         }
 
