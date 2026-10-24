@@ -1,0 +1,14 @@
+main{
+    .pull{
+        border: 10px solid black;
+        display: inline-block;
+        &.right{
+            float: right;
+            margin-left: 1rem;
+        }
+        &.left{
+            float: left;
+            margin-right: 1rem;
+        }
+    }
+}

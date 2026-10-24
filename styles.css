@@ -2,6 +2,11 @@
 
 :root {
     --engDeptGreen: #505A2F;
+    --black: #000;
+    --green-light: #B4B697;
+    --grey-light: #F2F1F0;
+    --burgundy: #A12D37;
+
 }
 
 body {
