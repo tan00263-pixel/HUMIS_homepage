@@ -93,7 +93,18 @@ body {
                         text-transform: uppercase;
                         margin-top: 5px;
                         order: -2;
+
+                        &.info{
+                            text-transform: uppercase;
+                            margin: 20px 0 0 30px;
+                            display: block;
+                            a{
+                                color: var(--burgundy);
+                            }
+                        }
                     }
+
+
 
                     &.bottom {
                         text-transform: lowercase;
@@ -102,7 +113,16 @@ body {
                 }
 
                 main {
-                    padding: 30px;
+                    padding: 10px 30px 30px 30px;
+
+                    h5 {
+                        font-size: 20px;
+                        font-weight: lighter;
+                        color: var(--engDeptGreen);
+                        text-transform: uppercase;
+                        padding: 10px 0 10px 0;
+
+                    }
                 }
             }
         }
@@ -175,6 +195,25 @@ body {
 
                     main {
                         min-height: 500px;
+
+
+                        h4{
+                            border-top: 2px solid var(--black);
+                            padding-top: 10px;
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                        }
+
+                        h6{
+                            color: var(--black);
+                            margin-top: 10px;
+                            margin-bottom: 0px;
+                        }
+
+                        p{
+                           margin: 2px;
+                        }
+
                     }
                 }
             }
