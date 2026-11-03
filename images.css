@@ -1,16 +1,17 @@
-main{
-    .pull{
+main {
+    .pull {
         display: inline-block;
 
-        img{
+        img {
             max-width: 200px;
         }
 
-        &.right{
+        &.right {
             float: right;
             margin-left: 1rem;
         }
-        &.left{
+
+        &.left {
             float: left;
             margin-right: 1rem;
         }

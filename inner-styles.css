@@ -94,16 +94,16 @@ body {
                         margin-top: 5px;
                         order: -2;
 
-                        &.info{
+                        &.info {
                             text-transform: uppercase;
                             margin: 20px 0 0 30px;
                             display: block;
-                            a{
+
+                            a {
                                 color: var(--burgundy);
                             }
                         }
                     }
-
 
 
                     &.bottom {
@@ -116,20 +116,23 @@ body {
                     padding: 10px 30px 30px 30px;
                     min-height: 500px;
 
-                    h2{
+                    h2 {
                         border-bottom: 8px solid var(--burgundy);
                     }
-                    h3{
+
+                    h3 {
                         margin-top: 10px;
                         margin-bottom: 10px;
                     }
-                    h4{
+
+                    h4 {
                         border-top: 2px solid var(--black);
                         color: var(--burgundy);
                         padding-top: 10px;
                         margin-top: 0;
                         margin-bottom: 10px;
                     }
+
                     h5 {
                         font-size: 20px;
                         font-weight: lighter;
@@ -138,45 +141,45 @@ body {
                         padding: 10px 0 10px 0;
                     }
 
-                    h6{
+                    h6 {
                         color: var(--black);
                         margin-top: 10px;
                         margin-bottom: 0;
                     }
 
-                    p{
+                    p {
                         margin: 5px;
                     }
 
-                    section.column{
+                    section.column {
                         display: flex;
                         gap: 10px;
                         height: 100%;
 
-                        .column-parts{
+                        .column-parts {
                             width: 30%;
                         }
 
-                        div.links{
+                        div.links {
                             display: flex;
                             flex-direction: column;
                             gap: 2px;
                         }
 
-                        div.red h5{
-                           color: var(--burgundy);
+                        div.red h5 {
+                            color: var(--burgundy);
                             font-weight: bold;
                             font-size: 16px;
                             margin: 0;
                         }
 
-                        div.red h6{
+                        div.red h6 {
                             font-size: 11px;
                             margin: 2px;
                             text-transform: none;
                         }
 
-                        a{
+                        a {
                             display: block;
                             color: var(--black);
                             text-decoration: none;
@@ -189,12 +192,12 @@ body {
             }
         }
 
-        .inner-column{
+        .inner-column {
             width: 70%;
             border-left: 2px dashed var(--black);
             padding: 10px;
 
-            img{
+            img {
                 width: 100%;
             }
 
